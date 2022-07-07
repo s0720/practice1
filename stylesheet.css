@@ -22,3 +22,44 @@ body {
     color:#EC6996;
     font-weight: bold;
 }
+
+header {
+    border-top:1px solid #EDEDED;
+    border-bottom:1px solid #EDEDED;
+}
+
+.header-con {
+    width:80%;
+    margin:0 auto;
+    height:50px;
+    line-height:50px;
+}
+
+.muk {
+    font-size: 20px;
+}
+
+.header-logo {
+    float:left;
+    padding-right:80px;
+}
+
+.header-menu a{
+    padding-left:15px;
+    padding-right:15px;
+    font-size:14px;
+}
+
+.header-icon {
+    float:right;
+}
+
+.header-icon span {
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.fa-solid {
+    color:#707070;
+}
+
