@@ -5,5 +5,25 @@
         width:100%;
         font-size:10px;
     }
-   
+
+    .header-con {
+        width:90%;
+        margin:0 auto;
+        height:40px;
+        line-height:40px;
+    }
+
+    .header-menu {
+        display:none;
+    }
+
+    .header-icon span{
+        padding-left:7px;
+        padding-right:7px;
+    }
+
+    .fa-circle-user,fa-heart {
+        display:none;
+    }
+    
 }
