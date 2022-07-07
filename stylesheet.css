@@ -54,7 +54,7 @@ header {
     float:right;
 }
 
-.header-icon span {
+.header-icon span{
     padding-left:15px;
     padding-right:15px;
 }
@@ -63,3 +63,6 @@ header {
     color:#707070;
 }
 
+.smp-icon {
+    display:none;
+}
