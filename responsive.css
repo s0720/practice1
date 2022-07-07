@@ -17,13 +17,18 @@
         display:none;
     }
 
-    .header-icon span{
-        padding-left:7px;
-        padding-right:7px;
-    }
-
-    .fa-circle-user,fa-heart {
+    .header-icon {
         display:none;
     }
+
+    .smp-icon {
+        display:block;
+        float:right;
+    }
+
+    .smp-icon span {
+        padding-left:7px;
+    }
+
     
 }
