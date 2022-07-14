@@ -150,31 +150,30 @@ aside {
     margin-left:-130px;
 }
 
-/*--------画像サイズ調整---------*/
-img{
-	width:60%;
-}
+  /*--------画像サイズ調整---------*/
+  img{
+	  width:50%;
+  }
 
-/*-----------height調整----------*/
-.slick-slide{
-	height:auto!important;
-}
-/*------------------------------*/
+  /*-----------height調整----------*/
+  .slick-slide{
+	  height:700px!important;
+	  width:700px;
+  }
 
-
-/*-----------矢印表示----------*/
-.slick-next{
+  /*-----------矢印表示----------*/
+  .slick-next{
     right:0!important;
-}
-.slick-prev{
+  }
+  .slick-prev{
     left:0!important;
-}
-.slick-arrow{
+  }
+  .slick-arrow{
     width: initial!important;
     height: initial!important;
     z-index:2!important;
-}
-.slick-arrow:before{
-    font-size: 30px!important;
-}
+  }
+  .slick-arrow:before{
+    font-size: 10px!important;
+  }
 /*------------------------------*/
