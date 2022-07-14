@@ -11,14 +11,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 5000,
-            });
-        });
-</script>
+<!--------------------スライダー見た目-------------------------------------------------->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<!-------------------------------------------------------------------------------------> 
+
+<!--------------------jQuery-----------------------------------------------------------> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!------------------------------------------------------------------------------------->  
+
+<!--------------------スライダー動かすやつ----------------------------------------------->  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<!------------------------------------------------------------------------------------->  
 
   </head>
   <body>
@@ -47,15 +51,16 @@
       </div>
     </header>
 
-    <div class="con1"> 
-      <form method="get" action="https://www.muk-webshop.com/fs/accessory/GoodsSearchList.html" class="search_container">
-      <input type="hidden" name="_e_k" value="Ａ">
-      <input type="hidden" name="tag" value="検索可能"> 
-      <input type="text" name="keyword" maxlength="1000" placeholder="Item serch">
-      <input type="submit" value="&#xf002">
-      </form>
+    <div class="con1-wrapper">
+      <aside>
+        <form method="get" action="https://www.muk-webshop.com/fs/accessory/GoodsSearchList.html" class="search_container">
+        <input type="hidden" name="_e_k" value="Ａ">
+        <input type="hidden" name="tag" value="検索可能"> 
+        <input type="text" name="keyword" maxlength="1000" placeholder="Item serch">
+        <input type="submit" value="&#xf002">
+        </form>
 
-      <p class="side-menu">CATEGORY</p>
+        <p class="side-menu">CATEGORY</p>
         <p class="side-menu-list">ピアス</p>
         <p class="side-menu-list">イヤリング</p>
         <p class="side-menu-list">ネックレス</p>
@@ -66,7 +71,7 @@
         <p class="side-menu-list">雑貨</p>
         <p class="side-menu-list">ジュエリー</p>
 
-      <p class="side-menu">TYPE</p>
+        <p class="side-menu">TYPE</p>
         <p class="side-menu-list"><span class="new">[NEW]</span> 新作入荷アイテム</p>
         <p class="side-menu-list"><span class="re">[RE]</span> 再入荷アイテム</p>
         <p class="side-menu-list"><span class="hot">[HOT]</span> マスク関連グッズ</p>
@@ -77,18 +82,33 @@
         <p class="side-menu-list">使用シーンから探す</p>
         <p class="side-menu-list">ショップブランドから探す</p>
         <p class="side-menu-list">商品コレクションから探す</p>
+      </aside>
+      <main>
+        <div class="main-contents">
+          <div class="sec_inner">
+            <div class="slider">   
+                  <div><img src="con1-1.png"></div>
+                  <div><img src="con1-2.png"></div>   
+                  <div><img src="con1-3.png"></div>
+            </div>
+          </div>
 
-      <div class="slider">
-        <img src="con1-1.png" width="300" height="300" alt="">
-        <img src="con1-2.png" width="300" height="300" alt="">
-        <img src="con1-3.png" width="300" height="300" alt="">
-        <img src="con1-4.png" width="300" height="300" alt="">
-        <img src="con1-4.png" width="300" height="300" alt="">
-        <img src="con1-5.png" width="300" height="300" alt="">
-        <img src="con1-6.png" width="300" height="300" alt="">
-      </div>
-      
-
+         
+        </div>
+        </div>
+      </main>
     </div>
+  <script>
+    $('.slider').slick({
+    autoplay: true,         //自動再生
+    autoplaySpeed: 2000,  //自動再生のスピード
+    speed: 800,      //スライドするスピード
+    dots: true, //スライドしたのドット
+    arrows: true,          //左右の矢印
+    infinite: true, //スライドのループ
+    pauseOnHover: false,   //ホバーしたときにスライドを一時停止しない　
+});
+
+  </script>
   </body>
 </html>
