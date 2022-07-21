@@ -23,10 +23,11 @@
   </head>
   <body>
     <p class="header-ad">新規会員登録でその場で使える<span class="point">300pt</span>プレゼント！他にもお得がいっぱい！</p>
+    <nav id="global_nav">
     <header>
       <div class="header-con">
+          <span class="header-logo"><img src="https://www.muk-webshop.com/wp-content/themes/muk/src/images/common/logo.png"></span>
           <span class="header-menu">
-          <img class="logo" src="https://www.muk-webshop.com/wp-content/themes/muk/src/images/common/logo.png">
           <a>TOP</a>
           <a>LOGIN</a>
           <a>LOGOUT</a>
@@ -38,14 +39,51 @@
           <span class="fa-solid fa-circle-user fa-lg"></span>
           <span class="fa-solid fa-heart fa-lg"></span>
           <span class="fa-solid fa-cart-shopping fa-lg"></span>
-          <span class="fa-solid fa-bars fa-lg"></span>
           </span>
           <span class="smp-icon">
           <span class="fa-solid fa-cart-shopping fa-lg"></span>
           <span class="fa-solid fa-bars fa-lg"></span>
           </span>
+        <input id="menu-checkbox" type="checkbox" />
+        <label class="menu-btn" for="menu-checkbox">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-content">
+          <input id="menu-checkbox" type="checkbox" />
+          <label class="menu-btn" for="menu-checkbox">
+            <i class="fas fa-times"></i>
+          </label>
+          <nav class="nav-menu">
+            <p class="hamburger">
+              <p class="ham side-menu">CATEGORY</p>
+              <p class="ham-menu-list">ピアス</p>
+              <p class="ham-menu-list">イヤリング</p>
+              <p class="ham-menu-list">ネックレス</p>
+              <p class="ham-menu-list">リング</p>
+              <p class="ham-menu-list">ブレスレット・アンクレット</p>
+              <p class="ham-menu-list">ヘアアクセサリー</p>
+              <p class="ham-menu-list">時計</p>
+              <p class="ham-menu-list">雑貨</p>
+              <p class="ham-menu-list">ジュエリー</p>
+
+              <p class="ham side-menu">TYPE</p>
+              <p class="ham-menu-list"><span class="new">[NEW]</span> 新作入荷アイテム</p>
+              <p class="ham-menu-list"><span class="re">[RE]</span> 再入荷アイテム</p>
+              <p class="ham-menu-list"><span class="hot">[HOT]</span> マスク関連グッズ</p>
+              <p class="ham-menu-list">金属アレルギー対応</p>
+              <p class="ham-menu-list">プチプラアイテム</p>
+              <p class="ham-menu-list">素材から探す</p>
+              <p class="ham-menu-list">モチーフから探す</p>
+              <p class="ham-menu-list">使用シーンから探す</p>
+              <p class="ham-menu-list">ショップブランドから探す</p>
+              <p class="ham-menu-list">商品コレクションから探す</p>
+            </p>
+          </nav>
+        </div>
+        <label class="nav-close" for="menu-checkbox"></label>
       </div>
     </header>
+    </nav>
 
     <div class="con1-wrapper">
       <aside>
@@ -482,6 +520,20 @@
   </body>
 
   <script>
+    var nav_pos = $("#global_nav").offset().top;
+    var nav_height = $("#global_nav").outerHeight();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > nav_pos) {
+          $("body").css("padding-top", nav_height);
+          $("#global_nav").addClass("fixed");
+      } else {
+          $("body").css("padding-top", 0);
+          $("#global_nav").removeClass("fixed");
+      }
+  });
+    </script>
+  
+  <script>
     $('.slider-1').slick({
     autoplay: true,         //自動再生
     autoplaySpeed: 2000,  //自動再生のスピード
@@ -510,6 +562,8 @@
   arrows:true
 });
 </script>
+
+
 
   </body>
 </html>
