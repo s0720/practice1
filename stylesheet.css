@@ -753,6 +753,11 @@
         color:white;
         text-align:center;
     }
+
+    .contact:hover {
+	opacity:0.5;
+	cursor:pointer;
+    }
     
     .buttom {
         font-size:12px;
