@@ -60,8 +60,8 @@
         border-bottom:1px solid black;
     }
 
-    .header-icon {
-        padding-left:120px;
+    .header-item {
+        float:right;
     }
     
     .header-icon span{
@@ -90,6 +90,10 @@
         position: fixed;
         z-index:10;
         top: 0;
+    }
+
+    .hambureger-menu {
+        float:right;
     }
 
     .hamburger {
@@ -754,9 +758,9 @@
         text-align:center;
     }
 
-    .contact:hover {
-	opacity:0.5;
-	cursor:pointer;
+    .contact {
+        opacity: 0.5;
+        cursor: pointer;
     }
     
     .buttom {
