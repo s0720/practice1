@@ -13,6 +13,10 @@
         line-height:40px;
     }
 
+    .header-con img {
+        width:80%;
+    }
+
     .header-menu {
         display:none;
     }
@@ -24,11 +28,7 @@
     .smp-icon {
         display:block;
         float:right;
-    }
-
-    .smp-icon span {
         padding-left:7px;
     }
-
     
 }
