@@ -456,11 +456,21 @@
     .collection-img img {
         width:100%;
     }
+
+    .collection-img img:hover {
+        opacity:0.5;
+        cursor:pointer;
+    }
     
     .collection-img-p-1{
         text-align:center;
         font-size:12px;
         padding-bottom:15px;
+    }
+
+    .collection-img p:hover{
+        text-decoration: underline;
+        cursor:pointer;
     }
     
     .collection-img-p-2 {
@@ -513,10 +523,20 @@
     .ranking-item img {
         width:110%;
     }
+
+    .ranking-item img:hover {
+        opacity: 0.5;
+        cursor:pointer;
+    }
     
     .ranking-item p{
         text-align:center;
         font-size:11px;
+    }
+
+    .ranking-item p:hover {
+        opacity: 0.5;
+        cursor:pointer;
     }
     
     .ranking li:nth-child(1)::before { 
@@ -555,6 +575,11 @@
         float:left;
         border-bottom:1px solid #E9E9E9;
         padding:10px 20px 10px 0px;
+    }
+
+    .contents-item:hover {
+        cursor:pointer;
+        background-color: #F2F2F2;
     }
     
     .clear {
@@ -625,6 +650,14 @@
     .slider-3 .slick-dots {
         bottom:-60px!important;
     }
+
+    .media-item:hover{
+        cursor:pointer;
+    }
+
+    .slider-img-3:hover{
+        opacity:0.5;
+    }
     
     .c-storebrand {
         margin-bottom:300px;
@@ -640,6 +673,11 @@
     
     .storebrand-item img {
         width:90%;
+    }
+
+    .storebrand-item img:hover {
+        cursor:pointer;
+        opacity:0.5;
     }
     
     .bottom {
@@ -661,6 +699,11 @@
     .bottom-logo img {
         width:70%;
     }
+
+    .bottom-logo img:hover {
+        opacity:0.5;
+        cursor: pointer;
+    }
     
     .bottom-sns {
         float:right;
@@ -670,6 +713,11 @@
     .fa-brands {
         padding-left:20px;
         line-height: 65px;
+    }
+
+    .fa-brands:hover {
+        opacity:0.5;
+        cursor: pointer;
     }
     
     footer {
@@ -688,6 +736,11 @@
     
     .footer-left-item {
         font-size:12px;
+    }
+
+    .footer-left-item:hover {
+        cursor: pointer;
+        text-decoration: underline;
     }
     
     .contact {
@@ -708,6 +761,11 @@
         line-height:40px;
         border:1px solid #E9E9E9;
         text-align:center;
+    }
+
+    .buttom:hover {
+        cursor: pointer;
+        opacity: 0.5;
     }
     
     .footer-right {
@@ -733,6 +791,11 @@
         width:25%;
         padding-right:25px;
         padding-bottom:10px;
+    }
+
+    .footer-right-item:hover {
+        cursor: pointer;
+        text-decoration: underline;
     }
     
     .arr {
