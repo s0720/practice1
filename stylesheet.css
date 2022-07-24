@@ -98,17 +98,12 @@
 
     .hamburger {
         padding-left:10px;
-        display:flex;
     }
 
     .hamburger-menu-item {
-        display: block;
+        display:block;
         line-height:40px;
         font-size:12px;
-    }
-
-    .hamburger-menu-ct {
-        float:left;
     }
     
     .menu-btn > i {
