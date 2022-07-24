@@ -814,4 +814,23 @@
         text-align: center;
         padding:20px 0px;
     }
+
+    /* for sm class */
+
+    .sm-search {
+        width:100%;
+        display:none;
+    }
+
+    .sm-search a{
+        background-color: #EDEDED;
+        border:1px solid #C0C0C0;
+        display:none;
+    }
     
+    .sm-search-box {
+        width:100%;
+        margin:0 auto;
+        text-align:center;
+        display:none;
+    }
