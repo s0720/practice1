@@ -9,26 +9,43 @@
     .header-con {
         width:90%;
         margin:0 auto;
-        height:40px;
-        line-height:40px;
+        height:50px;
+        line-height:50px;
     }
 
     .header-con img {
-        width:80%;
+        width:50%;
     }
 
     .header-menu {
         display:none;
     }
 
-    .header-icon {
+    .fa-circle-user fa-heart {
         display:none;
     }
 
-    .smp-icon {
-        display:block;
-        float:right;
-        padding-left:7px;
+    aside {
+        display:none;
     }
+
+    .sec_inner_1 {
+        width:100%;
+        height:100%;
+        margin:0 auto;
+        margin-top:5px;
+    }
+    .sm-search {
+        display:block;
+    }
+
+    .sm-search a{
+        display:block;
+    }
+    
+    .sm-search-box {
+       display:block;
+    }
+    
     
 }
